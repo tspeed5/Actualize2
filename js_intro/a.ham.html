@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Example</title>
+</head>
+<body>
+  <h1 ondblclick="doubleClick()"; onmousemove="mouseMoves()"; onclientX="xCoordinates()";>Alexander Hamilton</h1>
+  <p onclick="parClick()">Alexander Hamilton (January 11, 1755 or 1757 – July 12, 1804) was an American statesman and one of the Founding Fathers of the United States. He was an influential interpreter and promoter of the U.S. Constitution, as well as the founder of the nation's financial system, the Federalist Party, the United States Coast Guard, and The New York Post newspaper.</p>
+
+  <button onclick="redText()">Click Button</button>
+  <script>
+    function doubleClick() {
+      console.log("You double clicked on the header!");
+    }
+
+    function parClick() {
+      console.log("You clicked on the paragraph!");
+    }
+
+    function mouseMoves() {
+      console.log("You moved your mouse on a header!!!");
+
+    }
+
+     function redText() {
+      // console.log("this is red text");
+
+      var header = document.querySelector('h1');
+      header.style.color=red;
+
+    }
+
+
+  </script>
+
+</body>
+</html>

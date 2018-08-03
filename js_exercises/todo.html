@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Example</title>
+    <style>
+      .strikethrough {
+        text-decoration: line-through;
+      }
+
+    </style>
+
+</head>
+<body>
+  
+  <p onclick="completeToggle()"; id = "strikethrough">Pay bills</p>
+  <p onclick="completeToggle()">Wash car</p>
+  <p onclick="completeToggle()">Get laundry</p>
+
+  <script type="text/javascript">
+    
+    function completeToggle(todo) {
+      // console.log("complete");
+
+      todo.classList.add('strikethrough')
+
+    }
+
+  </script>
+</body>
+</html>

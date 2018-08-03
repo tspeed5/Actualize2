@@ -1,0 +1,25 @@
+
+
+
+<%= form_tag "/client/contacts", method: :post do %>
+  <div>
+    FIRST NAME: <input type="text" name="input_first_name">
+  </div>
+   <div>
+    MIDDLE NAME: <input type="text" name="input_middle_name">
+  </div>
+  <div>
+    LAST NAME: <input type="text" name="input_last_name">
+  </div>
+    <div>
+    EMAIL: <input type="text" name="input_email">
+  </div>
+    <div>
+    PHONE NUMBER: <input type="text" name="input_phone_number">
+  </div>
+  <div>
+    BIO: <textarea rows="4" cols="50" name="input_bio"> </textarea>
+  </div>
+
+  <input type= "submit" value="CREATE NEW CONTACT">
+  <% end %>

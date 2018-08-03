@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="container" style="width:100%; height:400px;"></div>
+   
+
+    <script>
+      $(function () { 
+    var myChart = Highcharts.chart('container', {
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Preferred Summer Activities'
+        },
+        xAxis: {
+            categories: ['Surfing', 'Beach Volleyball', 'Netflix Binge']
+        },
+        yAxis: {
+            title: {
+                text: 'Number of Votes'
+            }
+        },
+        series: [{
+            name: 'Jane',
+            data: [1, 0, 4]
+        }, {
+            name: 'John',
+            data: [5, 7, 3],
+
+        },
+        {
+            name: 'Sarah',
+            data: [3, 2, 8]
+        },
+        {
+            name: 'Joseph',
+            data: [4, 2, 4]
+        },]
+    });
+});
+    </script>
+
+</body>
+</html>

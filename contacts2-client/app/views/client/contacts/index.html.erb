@@ -1,0 +1,8 @@
+<% @contacts.each do |contact| %>
+  <p>id: <%= contact ['id'] %></p>
+  <p>first_name: <%= contact ['first_name'] %></p>
+  <p>last_name: <%= contact ['last_name'] %></p>
+  <p>email: <%= contact ['email'] %></p>
+  <p>phone_number: <%= contact ['phone_number'] %></p>
+  <p> CREATED AT: <%= contact ['formatted']['month_day_year']%> </p>
+<% end %>
